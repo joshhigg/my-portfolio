@@ -40,6 +40,7 @@ h3 {
 
 p {
     margin-bottom: 1rem;
+    font-size: 1.8rem;
 }
 
 header {
@@ -98,17 +99,77 @@ main {
 aside {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 75%;
     justify-content: space-around;
     align-items: flex-end;
+    margin-top: 20px;
+}
+
+.about-me-div {
     padding-right: 30px;
+    padding-bottom: 80px;
     border-right: 3px solid #555;
+    margin-top: 20px;
+}
+
+.projects-div {
+    padding-right: 30px;
+    padding-bottom: 1100px;
+    border-right: 3px solid #555;
+    margin-top: 80px;
+}
+
+.contact-me-div {
+    padding-right: 30px;
+    padding-bottom: 75px;
+    border-right: 3px solid #555;
+    margin-top: 20px;
 }
 
 section {
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    margin: 70px 30px;
 }
 
+section p {
+    margin-bottom: 80px;
+}
+
+.main-project img {
+    width: 100%;
+    border: 3px solid #555;
+}
+
+.main-project {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.main-project .text {
+    position: absolute;
+    font-size: 3.0rem;
+    bottom: 50px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0 10px 0 25px;
+}
+
+/*Figure out this other images mess so it can be responsive*/
+.other-projects img {
+    width: 50%;
+}
+
+.other-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+/* Use this to orient the side text to line up with main
+#about-me {
+    position: relative;
+    top: 20px;
+}
+*/
