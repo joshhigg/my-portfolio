@@ -1,6 +1,7 @@
 :root {
     --light: #E2EADC;
     --dark: #F85419;
+    --border-color: #555;
 }
 
 html {
@@ -69,26 +70,26 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border: 3px solid #555;
+    border: 3px solid var(--border-color);
     background-image: url(./background.jpg);
 }
 
 .profile-picture {
     height: 300px;
-    border: 3px solid #555;
+    border: 3px solid var(--border-color);
     border-radius: 5%;
     margin-top: 5px;
-    box-shadow: 5px 5px 10px #555;
+    box-shadow: 5px 5px 10px var(--border-color);
 }
 
 .subheader h2 {
     color: var(--light);
     background-color: var(--dark);
     padding: 20px;
-    border: 3px solid #555;
+    border: 3px solid var(--border-color);
     border-radius: 56px;
     font-size: 4.0rem;
-    box-shadow: 5px 5px 10px #555;
+    box-shadow: 5px 5px 10px var(--border-color);
 }
 
 main {
@@ -97,47 +98,44 @@ main {
 }
 
 aside {
-    display: flex;
-    flex-direction: column;
     width: 75%;
-    justify-content: space-around;
-    align-items: flex-end;
     margin-top: 20px;
+    text-align: right;
 }
 
 .about-me-div {
     padding-right: 30px;
-    padding-bottom: 80px;
-    border-right: 3px solid #555;
-    margin-top: 20px;
+    padding-bottom: 120px;
+    border-right: 3px solid var(--border-color);
+    margin: 20px 0 80px 0;
 }
 
 .projects-div {
     padding-right: 30px;
-    padding-bottom: 1100px;
-    border-right: 3px solid #555;
-    margin-top: 80px;
-}
-
-.contact-me-div {
-    padding-right: 30px;
-    padding-bottom: 75px;
-    border-right: 3px solid #555;
-    margin-top: 20px;
+    padding-bottom: 1150px;
+    border-right: 3px solid var(--border-color);
+    margin-top: 0px;
 }
 
 section {
-    margin: 70px 30px;
+    margin: 70px 50px;
 }
 
 section p {
-    margin-bottom: 80px;
+    margin-bottom: 140px;
 }
 
 .main-project img {
     width: 100%;
-    border: 3px solid #555;
+    border: 3px solid var(--border-color);
+    opacity: 1;
+    transition: .5s ease-in-out;
 }
+
+.main-project:hover img {
+    opacity: .5;
+}
+
 
 .main-project {
     position: relative;
@@ -149,27 +147,127 @@ section p {
     position: absolute;
     font-size: 3.0rem;
     bottom: 50px;
+    left: 2px;
     background-color: var(--dark);
     color: var(--light);
     padding: 0 10px 0 25px;
 }
 
-/*Figure out this other images mess so it can be responsive*/
+
 .other-projects img {
-    width: 50%;
+    width: 430px;
+    padding: 0 100px;
+    border: 3px solid var(--border-color);
+    margin: 20px 30px;
 }
+
+
 
 .other-projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-
-
-/* Use this to orient the side text to line up with main
-#about-me {
+.project-1, .project-2, .project-3, .project-4 {
     position: relative;
-    top: 20px;
+    text-align: center;
+    color: white;
 }
-*/
+
+.project-1 .text {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 75px;
+    left: 32.5px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0 10px 0 25px;
+}
+
+.project-2 .text {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 75px;
+    left: 32.5px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0 10px 0 25px;
+}
+
+.project-3 .text {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 75px;
+    left: 32.5px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0 10px 0 25px;
+}
+
+.project-4 .text {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 75px;
+    left: 32.5px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0 10px 0 25px;
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.contact-me-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-links li {
+    display: inline-block;
+    color: var(--light);
+    margin: 0 30px;
+}
+
+.project-1 img{
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+.project-2 img{
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+.project-3 img{
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+.project-4 img{
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+.project-1:hover img {
+    opacity: .5;
+}
+
+.project-2:hover img {
+    opacity: .5;
+}
+
+.project-3:hover img {
+    opacity: .5;
+}
+
+.project-4:hover img {
+    opacity: .5;
+}
