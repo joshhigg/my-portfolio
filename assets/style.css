@@ -180,8 +180,8 @@ section p {
 .project-1 .text {
     position: absolute;
     font-size: 1.5rem;
-    bottom: 75px;
-    left: 32.5px;
+    bottom: 70px;
+    left: 32px;
     background-color: var(--dark);
     color: var(--light);
     padding: 0 10px 0 25px;
@@ -190,8 +190,8 @@ section p {
 .project-2 .text {
     position: absolute;
     font-size: 1.5rem;
-    bottom: 75px;
-    left: 32.5px;
+    bottom: 70px;
+    left: 32px;
     background-color: var(--dark);
     color: var(--light);
     padding: 0 10px 0 25px;
@@ -200,8 +200,8 @@ section p {
 .project-3 .text {
     position: absolute;
     font-size: 1.5rem;
-    bottom: 75px;
-    left: 32.5px;
+    bottom: 70px;
+    left: 32px;
     background-color: var(--dark);
     color: var(--light);
     padding: 0 10px 0 25px;
@@ -210,8 +210,8 @@ section p {
 .project-4 .text {
     position: absolute;
     font-size: 1.5rem;
-    bottom: 75px;
-    left: 32.5px;
+    bottom: 70px;
+    left: 32px;
     background-color: var(--dark);
     color: var(--light);
     padding: 0 10px 0 25px;
@@ -246,12 +246,16 @@ footer {
 
 .project-2 img{
     opacity: 1;
+    height: 203px;
     transition: .5s ease-in-out;
+    padding: 0;
 }
 
 .project-3 img{
     opacity: 1;
+    height: 203px;
     transition: .5s ease-in-out;
+    padding: 0;
 }
 
 .project-4 img{
@@ -292,3 +296,4 @@ footer {
         width: auto;
     }
 }
+
