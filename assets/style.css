@@ -261,6 +261,8 @@ footer {
 .project-4 img{
     opacity: 1;
     transition: .5s ease-in-out;
+    height: 203px;
+    padding: 0;
 }
 
 .project-1:hover img {
